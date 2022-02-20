@@ -11,4 +11,8 @@
     --main: #f3d2c1;
     --tertiary: #f582ae;
     --highlight: #fef6e4;
-  }
+}
+
+body {
+    background: var(--button);
+}
