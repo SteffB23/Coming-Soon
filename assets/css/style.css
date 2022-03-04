@@ -1,6 +1,6 @@
 /*Elements*/
 :root {
-    --background: #fef6e4;
+    --background: #ffffff;
     --button: #f582ae;
     --headline: #001858;
     --buttontext: #001858;
@@ -13,6 +13,20 @@
     --highlight: #fef6e4;
 }
 
-body {
-    background: var(--button);
+body, html {
+    background: var(--background);
+    min-width: 100%;
+    min-height: 100vh;
 }
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+    
