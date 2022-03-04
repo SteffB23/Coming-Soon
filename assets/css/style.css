@@ -37,7 +37,8 @@ body, html {
 .c-logo {
     height: 75px;
 }
-/* Added image rather than using an img code block. Positioned it to cover the entire container as well*/
+/* Added image rather than using an img code block. Positioned it to cover the entire container as well
+Also, the max-width and margin 0 auto made it center and adhere to the responsiveness guideline*/
 #athlete {
     display: flex;
     background: #ffffff url("/assets/images/Bitmap.png") no-repeat right top;
@@ -45,14 +46,11 @@ body, html {
     height: 200px;
     width: 100%;
     background-size: cover;
+    max-width: 450px;
+    margin: 0 auto;
     
 }
 
-@media only screen and (max-width: 375px) {
-    #athlete {
-      
-    }
-}
 /*Positioned the header and paragraph to the center and adds color to the text*/
 .content-container {
     width: 100%;
@@ -101,3 +99,15 @@ input[type="submit"] {
     width: 60px;   
     font-family: 'Bangers', cursive;
 }
+
+.all-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 450px) {
+    .XXXXXXXXX {
+
+    }
+}
+
