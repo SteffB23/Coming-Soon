@@ -17,16 +17,31 @@ body, html {
     background: var(--background);
     min-width: 100%;
     min-height: 100vh;
+    margin: 0;
 }
 
 .header-logo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-
+    margin: 15px;
+    padding: 15px;
 }
 
-
+.c-logo {
+    height: 75px;
+}
+#athlete {
+    display: flex;
+    background: #ffffff url("/assets/images/Bitmap.png") no-repeat right top;
+    background-color: #8bd3dd;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
     
+}
+
+@media only screen and (max-width: 375px) {
+    #athlet {
+      
+    }
+}
