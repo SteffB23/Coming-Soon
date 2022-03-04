@@ -1,4 +1,7 @@
+/*Font Scheme from google.com/fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bad+Script&family=Bangers&family=Birthstone&family=Lacquer&family=Lobster&display=swap');
+
+/*Color Shceme*/
 /*Elements*/
 :root {
     --background: #ffffff;
@@ -6,6 +9,7 @@
     --headline: #001858;
     --buttontext: #001858;
     --paragraph: #172c66;
+
 /*Illustration*/
     --stroke: #001858;
     --secondary: #8bd3dd;
@@ -13,24 +17,27 @@
     --tertiary: #f582ae;
     --highlight: #fef6e4;
 }
-
+/*Defaults the margin and padding to the entire page*/
 body, html {
     background: var(--background);
     min-width: 100%;
     min-height: 100vh;
     margin: 0;
 }
-
+/*Centers logo above the Hero */
 .header-logo {
     display: flex;
     justify-content: center;
     margin: 15px;
+    height: 100px;
     padding: 15px;
+    
 }
-
+/*Adds space between the logo and the Hero*/
 .c-logo {
     height: 75px;
 }
+/* Added image rather than using an img code block. Positioned it to cover the entire container as well*/
 #athlete {
     display: flex;
     background: #ffffff url("/assets/images/Bitmap.png") no-repeat right top;
@@ -46,6 +53,7 @@ body, html {
       
     }
 }
+/*Positioned the header and paragraph to the center and adds color to the text*/
 .content-container {
     width: 100%;
     text-align: center;
@@ -55,34 +63,41 @@ body, html {
     font: weight 400px;
     color: black;
 }
-
+/*used to specify selected or targeted text for color scheme*/
 span {
     color:#CD3A24
 }
-
+/*Aligned the form to the center of the page*/
 .form-container {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100px;
 }
-
+/*Aligned it responsiely*/
 .input-context {
     margin: auto;
 }
 
-input[type="text"] {
-    height: 40px;
-    width: 250px;
-    box-sizing: border-box;
+/*Removes the space between the input & button*/
+form {
+    display: flex;
 }
 
+/*Positions the form side by side*/
+input[type="text"] {
+    height: 40px;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+}
+/*Positions the form side by side without space between the form*/
 input[type="submit"] {
     box-sizing: border-box;
     height: 40px;
     padding:none;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 0;
     background-color:black;
     color: white;
-    
+    width: 60px;   
+    font-family: 'Bangers', cursive;
 }
