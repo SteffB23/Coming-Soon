@@ -24,6 +24,12 @@ body, html {
     min-height: 100vh;
     margin: 0;
 }
+
+/*To create a 50/50 display for when the screen changes to desktop we see 2 sides*/
+body {
+    display: flex;
+}
+
 /*Centers logo above the Hero */
 .header-logo {
     display: flex;
@@ -107,17 +113,58 @@ input[type="submit"] {
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 450px) {
-    .XXXXXXXXX {
-
+/* Medium devices (Larger phones iPad mini's, 475px and up) */
+@media only screen and (min-width: 475px) {
+    #athlete-mobile {
+        display: flex;
+        background: #ffffff url("/assets/images/Bitmap.png") no-repeat right top;
+        background-color: #8bd3dd;
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        max-width: 767px;
+        margin: 0 auto;
+        
     }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .content-wrapper {
+        width: 60%;
+        
+    }
+
+    .content-container {
+        width: 85%;
+        text-align: left; 
+        margin-left: 100px;   
+        font-size: 64px;
+    }
+    
+
     #athlete-mobile {
-        display: none;
+        display: none;  
+    }
+
+    .header-logo {
+        margin-left: 60px;
+        display: block;
+    
+}
+
+.desktop-image {
+    display: block;
+    width: 50%;
+    background-image: url(/assets/images/athlete-big.webp);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+    background-size:cover;
+}
+
+    .form-container {
+        margin: auto;
+        width: 80%;
         
     }
 }
-
