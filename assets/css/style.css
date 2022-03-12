@@ -39,7 +39,7 @@ body, html {
 }
 /* Added image rather than using an img code block. Positioned it to cover the entire container as well
 Also, the max-width and margin 0 auto made it center and adhere to the responsiveness guideline*/
-#athlete {
+#athlete-mobile {
     display: flex;
     background: #ffffff url("/assets/images/Bitmap.png") no-repeat right top;
     background-color: #8bd3dd;
@@ -110,6 +110,14 @@ input[type="submit"] {
 @media only screen and (max-width: 450px) {
     .XXXXXXXXX {
 
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #athlete-mobile {
+        display: none;
+        
     }
 }
 
