@@ -19,7 +19,7 @@
 }
 /*Defaults the margin and padding to the entire page*/
 body, html {
-    background: var(--background);
+    background-image: url(/assets/images/waveybg.webp);
     min-width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -42,6 +42,7 @@ body {
 /*Adds space between the logo and the Hero*/
 .c-logo {
     height: 95px;
+    border: 1px solid;
     
 
 }
@@ -167,7 +168,7 @@ input[type="submit"] {
 
 .desktop-image {
     display: block;
-    width: 50%;
+    width: 40%;
     background-image: url(/assets/images/athlete-big.webp);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
     background-size:cover;
