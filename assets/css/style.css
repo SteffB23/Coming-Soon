@@ -34,14 +34,16 @@ body {
 .header-logo {
     display: flex;
     justify-content: center;
-    margin: 15px;
-    height: 100px;
+    margin: auto;
+    height: auto;
     padding: 15px;
     
 }
 /*Adds space between the logo and the Hero*/
 .c-logo {
-    height: 75px;
+    height: 95px;
+    
+
 }
 /* Added image rather than using an img code block. Positioned it to cover the entire container as well
 Also, the max-width and margin 0 auto made it center and adhere to the responsiveness guideline*/
@@ -112,7 +114,6 @@ input[type="submit"] {
     max-width: 450px;
     margin: 0 auto;
 }
-
 /* Medium devices (Larger phones iPad mini's, 475px and up) */
 @media only screen and (min-width: 475px) {
     #athlete-mobile {
@@ -123,14 +124,24 @@ input[type="submit"] {
         width: 100%;
         background-size: cover;
         max-width: 767px;
-        margin: 0 auto;
-        
+        margin: 0 auto;   
+    }
+
+    .c-logo {
+        height: 175px;
+    
     }
 
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .c-logo {
+        height: 175px;
+        margin-left: 20px;
+        
+    
+    }
+    
     .content-wrapper {
         width: 60%;
         
