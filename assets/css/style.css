@@ -53,6 +53,7 @@ Also, the max-width and margin 0 auto made it center and adhere to the responsiv
 
 /*Positioned the header and paragraph to the center and adds color to the text*/
 .content-container {
+    
     width: 100%;
     text-align: center;
     font-size: 40px;
@@ -77,9 +78,10 @@ span {
     margin: auto;
 }
 
-/*Removes the space between the input & button*/
+/*Removes the space between the input & button-And aligns multiple input fields with responsiveness*/
 form {
-    display: flex;
+    
+    align-items: center;
 }
 
 /*Positions the form side by side*/
