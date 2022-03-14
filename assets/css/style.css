@@ -19,7 +19,7 @@
 }
 /*Defaults the margin and padding to the entire page*/
 body, html {
-    background-image: url(/assets/images/waveybg.webp);
+    background-image: url("/assets/images/waveybg.webp");
     min-width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -43,6 +43,9 @@ body {
 .c-logo {
     height: 95px;
     border: 1px solid;
+    display: block;
+    background-repeat: no-repeat, repeat;
+    background-blend-mode: lighten;
     
 
 }
@@ -130,6 +133,8 @@ input[type="submit"] {
 
     .c-logo {
         height: 175px;
+        background-repeat: no-repeat, repeat;
+        background-blend-mode: lighten;
     
     }
 
@@ -139,7 +144,8 @@ input[type="submit"] {
     .c-logo {
         height: 175px;
         margin-left: 20px;
-        
+        background-repeat: no-repeat, repeat;
+        background-blend-mode: lighten;
     
     }
     
@@ -172,6 +178,7 @@ input[type="submit"] {
     background-image: url(/assets/images/athlete-big.webp);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
     background-size:cover;
+    
 }
 
     .form-container {
