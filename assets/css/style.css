@@ -175,10 +175,9 @@ input[type="submit"] {
 .desktop-image {
     display: block;
     width: 40%;
-    background-image: url(/assets/images/athlete-big.webp);
+    background-image: url("/assets/images/athlete-big.webp");
     clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
     background-size:cover;
-    
 }
 
     .form-container {
