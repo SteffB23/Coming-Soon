@@ -19,7 +19,7 @@
 }
 /*Defaults the margin and padding to the entire page*/
 body, html {
-    background-image: url("/assets/images/waveybg.webp");
+    background-image: url("https://assets.codepen.io/6060109/waves.png");
     min-width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -53,7 +53,7 @@ body {
 Also, the max-width and margin 0 auto made it center and adhere to the responsiveness guideline*/
 #athlete-mobile {
     display: flex;
-    background: #ffffff url("/assets/images/Bitmap.png") no-repeat right top;
+    background: #ffffff url("assets/images/Bitmap.png") no-repeat right top;
     background-color: #8bd3dd;
     height: 200px;
     width: 100%;
@@ -118,11 +118,16 @@ input[type="submit"] {
     max-width: 450px;
     margin: 0 auto;
 }
+.girl-image {
+    display: none;
+}
+
+
 /* Medium devices (Larger phones iPad mini's, 475px and up) */
 @media only screen and (min-width: 475px) {
     #athlete-mobile {
         display: flex;
-        background: #ffffff url("/assets/images/Bitmap.png") no-repeat right top;
+        background-image: url("assets/images/Bitmap.png") no-repeat right top;
         background-color: #8bd3dd;
         height: 200px;
         width: 100%;
@@ -138,6 +143,9 @@ input[type="submit"] {
     
     }
 
+    .girl-image {
+        display: none;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -174,11 +182,11 @@ input[type="submit"] {
 
 .desktop-image {
     display: block;
-    width: 40%;
-    background-image: url("/assets/images/athlete-big.webp");
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
-    background-size:cover;
-}
+    width: 50%;
+    background: url('https://assets.codepen.io/6060109/athlete-big.png');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+  }
 
     .form-container {
         margin: auto;
