@@ -6,7 +6,7 @@
 :root {
     --background: #ffffff;
     --button: #f582ae;
-    --headline: #001858;
+    --headline: #CD3A24
     --buttontext: #001858;
     --paragraph: #172c66;
 
@@ -37,12 +37,12 @@ body {
     margin: auto;
     height: auto;
     padding: 15px;
+    background-color:white;
     
 }
 /*Adds space between the logo and the Hero*/
 .c-logo {
     height: 95px;
-    border: 1px solid;
     display: block;
     background-repeat: no-repeat, repeat;
     background-blend-mode: lighten;
@@ -151,7 +151,7 @@ input[type="submit"] {
 @media only screen and (min-width: 768px) {
     .c-logo {
         height: 175px;
-        margin-left: 20px;
+        margin-left: 80px;
         background-repeat: no-repeat, repeat;
         background-blend-mode: lighten;
     
@@ -175,8 +175,9 @@ input[type="submit"] {
     }
 
     .header-logo {
-        margin-left: 60px;
+        margin-left: 1px;
         display: block;
+        width: 110%;
     
 }
 
